@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <body>
+            <script>
+                let sum = 0;
+                let digit = new Array();
+                let array_size = Number(prompt("Enter the size of array"))
+
+                for (let i=0; i<array_size; i++) {
+                    digit[i] = Number(prompt("Enter the values to array"));
+                }
+
+                for(let i=0; i<array_size; i++) {
+                    sum = sum + digit[i];
+                }
+
+                alert("Sum of digits in array is " + sum)
+            </script>
+        </body>
+    </head>
+</html>

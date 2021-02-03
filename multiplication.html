@@ -1,0 +1,27 @@
+<html>
+    <head></head>
+    <body>
+        <h1>Multiplication Table</h1>
+        <form>
+            <label for="">Enter the Number:</label>
+            <input type="number" id="number"> <br>
+            <label for="">Enter the Range:</label>
+            <input type="number" id="range">
+            <button onclick="multiplication()">Generate</button>
+        </form>
+        
+        <script>
+            function multiplication() { 
+                let number = document.getElementById("number").value;
+                let range = document.getElementById("range").value;
+                
+                
+                for(i=1; i<=range; i++) {
+                    let result = i * number;
+                    // console.log(result);
+                    document.write(i + "*" + number + "=" + result + "<br>")              
+                }
+            }
+        </script>
+    </body>
+</html>

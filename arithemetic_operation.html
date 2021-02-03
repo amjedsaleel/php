@@ -1,0 +1,55 @@
+<html>
+    <head></head>
+    <body>
+        <h1>Arithemetic Operations</h1>
+
+        <form>
+            <label for="">Enter the Number 1:</label>
+            <input type="number" id="number1"> <br>
+            <label for="">Enter the Number 2:</label>
+            <input type="number" id="number2"> <br>
+            <button onclick="add()">Add</button>
+            <button onclick="subtract()">Subtract</button>
+            <button onclick="multiply()">Multiply</button>
+            <button onclick="divide()">Divide</button>
+        </form>
+
+        <script>
+            function read_numbers() {
+                let number1 = parseInt(document.getElementById("number1").value);
+                let number2 = parseInt(document.getElementById("number2").value);
+                console.log("readdd")
+
+                return [number1, number2];
+            }
+
+            function add() {
+                let numbers = read_numbers()
+                let number1 = numbers[0];
+                let number2 = numbers[1];
+                document.write("Sum = " + (number1 + number2))
+            }
+
+            function subtract() {
+                let numbers = read_numbers()
+                let number1 = numbers[0];
+                let number2 = numbers[1];
+                document.write("Difference = " + (number1 - number2))
+            }
+
+            function multiply() {
+                let numbers = read_numbers()
+                let number1 = numbers[0];
+                let number2 = numbers[1];
+                document.write("Prtoduct = " + (number1 * number2))
+            }
+
+            function divide() {
+                let numbers = read_numbers()
+                let number1 = numbers[0];
+                let number2 = numbers[1];
+                document.write("Quotient = " + (number1 / number2))
+            }
+        </script>
+    </body>
+</html>
