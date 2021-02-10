@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta charset='utf-8'>
+</head>
+<body>
+    <h1>Country and its Capital</h1>
+    <select name="" id="country" onchange="capital()">
+        <option value="select o country" selected>Select a Country</option>
+        <option value="china">China</option>
+        <option value="india">India</option>
+    </select>
+    <input type="text" id="out-put" size="30">
+    
+    <script>
+        function capital()
+        {
+            console.log("ok")
+            var x = document.getElementById("country").value;
+            
+            if (x=='china')
+                document.getElementById("out-put").value = "Capital of China is Beijing";
+            else if(x=='india')
+                document.getElementById("out-put").value = "Capital of India is New Delhi";
+            else
+                document.getElementById("out-put").value = "Select a country";
+
+        }
+    </script>
+</body>
+</html>

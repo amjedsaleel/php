@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>onFocus and onBlur event</h1>
+        <input type="text" id="text-input" onfocus="focusFunction()" onblur="blurFunction()">
+
+        <script>
+            function focusFunction() 
+            {
+                console.log("focus")
+                document.getElementById("text-input").style.backgroundColor = "yellow";
+                document.getElementById("text-input").style.color = "red";
+            }
+
+            function blurFunction() 
+            {
+                console.log("blur");
+                document.getElementById("text-input").style.backgroundColor = "blue";
+                document.getElementById("text-input").style.color = "white";
+            }
+        </script>
+    </body>
+</html>
